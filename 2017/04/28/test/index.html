@@ -37,7 +37,7 @@
             left = timeInterval;
         }
         var hour = parseInt(left / 3600);
-        var min = parseInt((left - hour * 60) / 60);
+        var min = parseInt((left - hour * 60 * 60) / 60);
         var sec = left % 60;
         console.log(hour, min, sec);
         document.getElementById("hour").textContent = hour;
